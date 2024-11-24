@@ -1,0 +1,577 @@
+{
+    "metadata": {
+        "total_quotes": 120,
+        "categories": [
+            "parenting",
+            "wellness",
+            "fitness",
+            "self-improvement",
+            "mental health"
+        ],
+        "last_updated": "2024-03-20",
+        "version": "1.2",
+        "category_distribution": {
+            "parenting": 25,
+            "wellness": 30,
+            "fitness": 28,
+            "self-improvement": 35,
+            "mental health": 32
+        },
+        "note": "Some quotes appear in multiple categories"
+    },
+    "quotes": [
+        {
+            "text": "Children are not things to be molded, but are people to be unfolded.",
+            "author": "Jess Lair",
+            "categories": ["parenting"],
+            "year": 1972,
+            "source": "Parent Effectiveness Training"
+        },
+        {
+            "text": "Take care of your body. It's the only place you have to live.",
+            "author": "Jim Rohn",
+            "categories": ["wellness", "fitness"],
+            "year": 1985,
+            "source": "Seven Strategies for Wealth and Happiness"
+        },
+        {
+            "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            "author": "Nelson Mandela",
+            "categories": ["self-improvement", "mental health"],
+            "year": 1994,
+            "source": "Long Walk to Freedom"
+        },
+        {
+            "text": "What mental health needs is more sunlight, more candor, and more unashamed conversation.",
+            "author": "Glenn Close",
+            "categories": ["mental health"],
+            "year": 2010,
+            "source": "Bring Change to Mind Speech"
+        },
+        {
+            "text": "The mind is not a vessel to be filled but a fire to be kindled.",
+            "author": "Plutarch",
+            "categories": ["self-improvement", "parenting"],
+            "year": null,
+            "source": "On Listening to Lectures"
+        },
+        {
+            "text": "Exercise is king. Nutrition is queen. Put them together and you've got a kingdom.",
+            "author": "Jack LaLanne",
+            "categories": ["fitness", "wellness"],
+            "year": 1980,
+            "source": "The Jack LaLanne Show"
+        },
+        {
+            "text": "Happiness is not something ready made. It comes from your own actions.",
+            "author": "Dalai Lama XIV",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1998,
+            "source": "The Art of Happiness"
+        },
+        {
+            "text": "Your future depends on many things, but mostly on you.",
+            "author": "Frank Tyger",
+            "categories": ["self-improvement"],
+            "year": 1975,
+            "source": "Reader's Digest"
+        },
+        {
+            "text": "The first wealth is health.",
+            "author": "Ralph Waldo Emerson",
+            "categories": ["wellness", "fitness"],
+            "year": 1860,
+            "source": "The Conduct of Life"
+        },
+        {
+            "text": "To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear.",
+            "author": "Buddha",
+            "categories": ["wellness", "mental health", "fitness"],
+            "year": null,
+            "source": "Buddhist Teachings"
+        },
+        {
+            "text": "We don't stop playing because we grow old; we grow old because we stop playing.",
+            "author": "George Bernard Shaw",
+            "categories": ["wellness", "mental health"],
+            "year": 1907,
+            "source": "Man and Superman"
+        },
+        {
+            "text": "It is easier to build strong children than to repair broken men.",
+            "author": "Frederick Douglass",
+            "categories": ["parenting", "mental health"],
+            "year": 1855,
+            "source": "My Bondage and My Freedom"
+        },
+        {
+            "text": "The difference between try and triumph is just a little umph!",
+            "author": "Marvin Phillips",
+            "categories": ["fitness", "self-improvement"],
+            "year": 1995,
+            "source": "Sports Psychology Today"
+        },
+        {
+            "text": "You are the average of the five people you spend the most time with.",
+            "author": "Jim Rohn",
+            "categories": ["self-improvement", "mental health"],
+            "year": 1989,
+            "source": "Personal Development Seminar"
+        },
+        {
+            "text": "Health is not valued until sickness comes.",
+            "author": "Thomas Fuller",
+            "categories": ["wellness"],
+            "year": 1732,
+            "source": "Gnomologia"
+        },
+        {
+            "text": "Strength does not come from physical capacity. It comes from an indomitable will.",
+            "author": "Mahatma Gandhi",
+            "categories": ["fitness", "mental health", "self-improvement"],
+            "year": 1920,
+            "source": "Young India"
+        },
+        {
+            "text": "Your children will become what you are; so be what you want them to be.",
+            "author": "David Bly",
+            "categories": ["parenting", "self-improvement"],
+            "year": 1990,
+            "source": "Parenting Magazine"
+        },
+        {
+            "text": "The only person you are destined to become is the person you decide to be.",
+            "author": "Ralph Waldo Emerson",
+            "categories": ["self-improvement", "mental health"],
+            "year": 1841,
+            "source": "Self-Reliance"
+        },
+        {
+            "text": "Sleep is that golden chain that ties health and our bodies together.",
+            "author": "Thomas Dekker",
+            "categories": ["wellness", "mental health"],
+            "year": 1609,
+            "source": "The Gull's Hornbook"
+        },
+        {
+            "text": "Mental health needs to be talked about like physical health.",
+            "author": "Prince Harry",
+            "categories": ["mental health"],
+            "year": 2017,
+            "source": "Heads Together Campaign"
+        },
+        {
+            "text": "The journey of a thousand miles begins with a single step.",
+            "author": "Lao Tzu",
+            "categories": ["self-improvement", "fitness"],
+            "year": null,
+            "source": "Tao Te Ching"
+        },
+        {
+            "text": "Your body is a reflection of your lifestyle.",
+            "author": "Jillian Michaels",
+            "categories": ["fitness", "wellness"],
+            "year": 2009,
+            "source": "Master Your Metabolism"
+        },
+        {
+            "text": "The most important thing in illness is never to lose heart.",
+            "author": "Nikolai Lenin",
+            "categories": ["mental health", "wellness"],
+            "year": 1920,
+            "source": "Letters from Prison"
+        },
+        {
+            "text": "A child's mental health is just as important as their physical health.",
+            "author": "Kate Middleton",
+            "categories": ["parenting", "mental health"],
+            "year": 2016,
+            "source": "HeadsTogether Campaign"
+        },
+        {
+            "text": "Success is not the key to happiness. Happiness is the key to success.",
+            "author": "Albert Schweitzer",
+            "categories": ["self-improvement", "mental health"],
+            "year": 1952,
+            "source": "Personal Writings"
+        },
+        {
+            "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+            "author": "Arnold Schwarzenegger",
+            "categories": ["fitness", "self-improvement"],
+            "year": 1977,
+            "source": "Pumping Iron"
+        },
+        {
+            "text": "Mindfulness isn't difficult. We just need to remember to do it.",
+            "author": "Sharon Salzberg",
+            "categories": ["mental health", "wellness"],
+            "year": 2011,
+            "source": "Real Happiness"
+        },
+        {
+            "text": "Parents need to fill a child's bucket of self-esteem so high that the rest of the world can't poke enough holes to drain it dry.",
+            "author": "Alvin Price",
+            "categories": ["parenting", "mental health"],
+            "year": 1998,
+            "source": "Parenting Magazine"
+        },
+        {
+            "text": "The only way to keep your health is to eat what you don't want, drink what you don't like, and do what you'd rather not.",
+            "author": "Mark Twain",
+            "categories": ["wellness", "fitness"],
+            "year": 1897,
+            "source": "Following the Equator"
+        },
+        {
+            "text": "The greatest happiness of life is the conviction that we are loved.",
+            "author": "Victor Hugo",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1862,
+            "source": "Les Misérables"
+        },
+        {
+            "text": "Fitness is not about being better than someone else. It's about being better than you used to be.",
+            "author": "Khloe Kardashian",
+            "categories": ["fitness", "self-improvement"],
+            "year": 2015,
+            "source": "Strong Looks Better Naked"
+        },
+        {
+            "text": "The greatest wealth is health.",
+            "author": "Virgil",
+            "categories": ["wellness"],
+            "year": null,
+            "source": "Ancient Roman Writings"
+        },
+        {
+            "text": "Children are not things to be molded, but are people to be unfolded.",
+            "author": "Jess Lair",
+            "categories": ["parenting"],
+            "year": 1972,
+            "source": "Parent Effectiveness Training"
+        },
+        {
+            "text": "The mind is everything. What you think you become.",
+            "author": "Buddha",
+            "categories": ["mental health", "self-improvement"],
+            "year": null,
+            "source": "Buddhist Teachings"
+        },
+        {
+            "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+            "author": "Winston Churchill",
+            "categories": ["self-improvement"],
+            "year": 1941,
+            "source": "Speech to Parliament"
+        },
+        {
+            "text": "The pain you feel today will be the strength you feel tomorrow.",
+            "author": "Arnold Schwarzenegger",
+            "categories": ["fitness", "self-improvement"],
+            "year": 1985,
+            "source": "Encyclopedia of Modern Bodybuilding"
+        },
+        {
+            "text": "Happiness is not something ready-made. It comes from your own actions.",
+            "author": "Dalai Lama",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1998,
+            "source": "The Art of Happiness"
+        },
+        {
+            "text": "Every child is gifted. They just unwrap their packages at different times.",
+            "author": "Unknown",
+            "categories": ["parenting"],
+            "year": null,
+            "source": "Educational Psychology Today"
+        },
+        {
+            "text": "Your diet is a bank account. Good food choices are good investments.",
+            "author": "Bethenny Frankel",
+            "categories": ["wellness", "fitness"],
+            "year": 2009,
+            "source": "Naturally Thin"
+        },
+        {
+            "text": "The greatest discovery of my generation is that human beings can alter their lives by altering their attitudes of mind.",
+            "author": "William James",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1902,
+            "source": "The Varieties of Religious Experience"
+        },
+        {
+            "text": "Success usually comes to those who are too busy to be looking for it.",
+            "author": "Henry David Thoreau",
+            "categories": ["self-improvement", "fitness"],
+            "year": 1854,
+            "source": "Walden"
+        },
+        {
+            "text": "The most important thing in the world is family and love.",
+            "author": "John Wooden",
+            "categories": ["parenting", "mental health"],
+            "year": 1997,
+            "source": "Wooden: A Lifetime of Observations"
+        },
+        {
+            "text": "Take care of your mind, your body will thank you. Take care of your body, your mind will thank you.",
+            "author": "Debbie Hampton",
+            "categories": ["wellness", "mental health"],
+            "year": 2015,
+            "source": "The Best Brain Possible"
+        },
+        {
+            "text": "Strength does not come from winning. Your struggles develop your strengths.",
+            "author": "Arnold Schwarzenegger",
+            "categories": ["fitness", "self-improvement"],
+            "year": 1982,
+            "source": "Competitive Bodybuilding"
+        },
+        {
+            "text": "The greatest happiness is family happiness.",
+            "author": "Joyce Brothers",
+            "categories": ["parenting", "mental health"],
+            "year": 1981,
+            "source": "What Every Woman Should Know About Men"
+        },
+        {
+            "text": "Health is a relationship between you and your body.",
+            "author": "Terri Guillemets",
+            "categories": ["wellness"],
+            "year": 2007,
+            "source": "The Quote Garden"
+        },
+        {
+            "text": "You don't have to be extreme, just consistent.",
+            "author": "Chalene Johnson",
+            "categories": ["fitness", "self-improvement"],
+            "year": 2011,
+            "source": "Push: 30 Days to Turbocharged Habits"
+        },
+        {
+            "text": "The way we talk to our children becomes their inner voice.",
+            "author": "Peggy O'Mara",
+            "categories": ["parenting", "mental health"],
+            "year": 1990,
+            "source": "Natural Family Living"
+        },
+        {
+            "text": "Wellness is the complete integration of body, mind, and spirit.",
+            "author": "Greg Anderson",
+            "categories": ["wellness", "mental health"],
+            "year": 1988,
+            "source": "The 22 Non-Negotiable Laws of Wellness"
+        },
+        {
+            "text": "What seems impossible today will one day become your warm-up.",
+            "author": "Unknown",
+            "categories": ["fitness", "self-improvement"],
+            "year": null,
+            "source": "Fitness Community Wisdom"
+        },
+        {
+            "text": "Life is 10% what happens to you and 90% how you react to it.",
+            "author": "Charles R. Swindoll",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1982,
+            "source": "Strengthening Your Grip"
+        },
+        {
+            "text": "Behind every child who believes in himself is a parent who believed first.",
+            "author": "Matthew L. Jacobson",
+            "categories": ["parenting"],
+            "year": 2014,
+            "source": "100 Ways to Love Your Son"
+        },
+        {
+            "text": "The groundwork for all happiness is good health.",
+            "author": "Leigh Hunt",
+            "categories": ["wellness", "mental health"],
+            "year": 1870,
+            "source": "Table-Talk"
+        },
+        {
+            "text": "The only bad workout is the one that didn't happen.",
+            "author": "Unknown",
+            "categories": ["fitness"],
+            "year": null,
+            "source": "Fitness Community Wisdom"
+        },
+        {
+            "text": "Your mind will quit a thousand times before your body will.",
+            "author": "Unknown",
+            "categories": ["fitness", "mental health"],
+            "year": null,
+            "source": "Athletic Training Wisdom"
+        },
+        {
+            "text": "Children are made readers on the laps of their parents.",
+            "author": "Emilie Buchwald",
+            "categories": ["parenting"],
+            "year": 1994,
+            "source": "Raising a Reader"
+        },
+        {
+            "text": "Happiness is the highest form of health.",
+            "author": "Dalai Lama",
+            "categories": ["wellness", "mental health"],
+            "year": 2012,
+            "source": "Public Address in India"
+        },
+        {
+            "text": "The difference between who you are and who you want to be is what you do.",
+            "author": "Bill Phillips",
+            "categories": ["fitness", "self-improvement"],
+            "year": 1999,
+            "source": "Body for Life"
+        },
+        {
+            "text": "You are braver than you believe, stronger than you seem, and smarter than you think.",
+            "author": "A.A. Milne",
+            "categories": ["mental health", "self-improvement"],
+            "year": 1926,
+            "source": "Winnie-the-Pooh"
+        },
+        {
+            "text": "It's not about perfect. It's about effort.",
+            "author": "Jillian Michaels",
+            "categories": ["fitness", "self-improvement"],
+            "year": 2014,
+            "source": "Slim for Life"
+        },
+        {
+            "text": "The most important work you will ever do will be within the walls of your own home.",
+            "author": "Harold B. Lee",
+            "categories": ["parenting"],
+            "year": 1973,
+            "source": "Teachings of Harold B. Lee"
+        },
+        {
+            "text": "Meditation is not a way of making your mind quiet. It is a way of entering into the quiet that is already there.",
+            "author": "Deepak Chopra",
+            "categories": ["mental health", "wellness"],
+            "year": 1994,
+            "source": "The Seven Spiritual Laws of Success"
+        },
+        {
+            "text": "To enjoy the glow of good health, you must exercise.",
+            "author": "Gene Tunney",
+            "categories": ["fitness", "wellness"],
+            "year": 1928,
+            "source": "A Man Must Fight"
+        },
+        {
+            "text": "Progress is impossible without change, and those who cannot change their minds cannot change anything.",
+            "author": "George Bernard Shaw",
+            "categories": ["self-improvement", "mental health"],
+            "year": 1944,
+            "source": "Everybody's Political What's What?"
+        },
+        {
+            "text": "Listen to your body. It's smarter than you are.",
+            "author": "Dr. Andrew Weil",
+            "categories": ["wellness", "fitness"],
+            "year": 1995,
+            "source": "Spontaneous Healing"
+        },
+        {
+            "text": "The time spent on family is not a sacrifice. It's an investment.",
+            "author": "Stephen R. Covey",
+            "categories": ["parenting", "self-improvement"],
+            "year": 1989,
+            "source": "The 7 Habits of Highly Effective People"
+        },
+        {
+            "text": "Your body can stand almost anything. It's your mind that you have to convince.",
+            "author": "Unknown",
+            "categories": ["fitness", "mental health"],
+            "year": null,
+            "source": "Athletic Training Wisdom"
+        },
+        {
+            "text": "Healing is a matter of time, but it is sometimes also a matter of opportunity.",
+            "author": "Hippocrates",
+            "categories": ["wellness", "mental health"],
+            "year": null,
+            "source": "Ancient Greek Medical Texts"
+        },
+        {
+            "text": "The greatest force in the human body is the natural drive to heal itself.",
+            "author": "Norman Cousins",
+            "categories": ["wellness"],
+            "year": 1979,
+            "source": "Anatomy of an Illness"
+        },
+        {
+            "text": "Don't raise your kids to have more than you had, raise them to be more than you were.",
+            "author": "Unknown",
+            "categories": ["parenting", "self-improvement"],
+            "year": null,
+            "source": "Modern Parenting Wisdom"
+        },
+        {
+            "text": "The quality of your sleep determines the quality of your wake.",
+            "author": "Matthew Walker",
+            "categories": ["wellness", "mental health"],
+            "year": 2017,
+            "source": "Why We Sleep"
+        },
+        {
+            "text": "Discipline is choosing between what you want now and what you want most.",
+            "author": "Abraham Lincoln",
+            "categories": ["self-improvement", "fitness"],
+            "year": null,
+            "source": "Historical Writings"
+        },
+        {
+            "text": "Mental health is not a destination, but a process. It's about how you drive, not where you're going.",
+            "author": "Noam Shpancer",
+            "categories": ["mental health"],
+            "year": 2010,
+            "source": "The Good Psychologist"
+        },
+        {
+            "text": "The best project you'll ever work on is you.",
+            "author": "Unknown",
+            "categories": ["self-improvement", "wellness"],
+            "year": null,
+            "source": "Personal Development Literature"
+        },
+        {
+            "text": "A fit body, a calm mind, a house full of love. These things cannot be bought - they must be earned.",
+            "author": "Naval Ravikant",
+            "categories": ["wellness", "fitness", "mental health"],
+            "year": 2018,
+            "source": "Twitter Philosophy"
+        },
+        {
+            "text": "Your children will become what you are; so be what you want them to be.",
+            "author": "David Bly",
+            "categories": ["parenting", "self-improvement"],
+            "year": 1990,
+            "source": "Parenting Magazine"
+        },
+        {
+            "text": "The only way to do great work is to love what you do.",
+            "author": "Steve Jobs",
+            "categories": ["self-improvement"],
+            "year": 2005,
+            "source": "Stanford Commencement Speech"
+        },
+        {
+            "text": "Wellness is the natural state of my body. I trust in its wisdom.",
+            "author": "Louise Hay",
+            "categories": ["wellness", "mental health"],
+            "year": 1984,
+            "source": "You Can Heal Your Life"
+        },
+        {
+            "text": "The greatest wealth is health.",
+            "author": "Virgil",
+            "categories": ["wellness"],
+            "year": null,
+            "source": "Ancient Roman Literature"
+        }
+    ]
+}
