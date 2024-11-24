@@ -1,7 +1,6 @@
 import json
 from typing import List, Optional, Dict, Union
 import random
-from datetime import datetime
 
 class QuoteGenerator:
     def __init__(self, json_file: str = 'quotes.json'):
