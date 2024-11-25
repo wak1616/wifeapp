@@ -10,7 +10,7 @@ def get_tip(topic):
         raise ValueError("HUGGING_FACE_TOKEN environment variable is not set")
         
     client = InferenceClient(
-        model="meta-llama/Meta-Llama-3-8B-Instruct",
+        model="meta-llama/Llama-3.1-405B",
         token=token
     )
     
