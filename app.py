@@ -83,17 +83,30 @@ def get_cached_content():
         ]
     return ["Error loading content"] * 5
 
-# Create the Gradio interface
-demo = gr.Blocks(theme=gr.themes.Glass())
+# Create the Gradio interface with mobile-friendly settings
+demo = gr.Blocks(
+    theme=gr.themes.Glass(),
+    css="""
+        .gradio-container {
+            max-width: 100% !important;
+            padding: 0 !important;
+        }
+        .markdown-text {
+            font-size: 16px !important;
+            padding: 10px !important;
+        }
+    """
+)
 
 # Add components to the interface
 with demo:
     gr.Markdown("# ❤️ Daily Quote, Tips, and Podcast Recommendations ❤️")
-    message = gr.Markdown()
-    quote = gr.Markdown()
-    parenting = gr.Markdown()
-    nutrition = gr.Markdown()
-    podcasts = gr.Markdown()
+    with gr.Column(scale=1, min_width=320):  # Ensure minimum width for mobile
+        message = gr.Markdown()
+        quote = gr.Markdown()
+        parenting = gr.Markdown()
+        nutrition = gr.Markdown()
+        podcasts = gr.Markdown()
     
     demo.load(
         fn=get_cached_content,
@@ -104,5 +117,7 @@ if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
         server_port=7860,
-    quiet=True
+        quiet=True,
+        scale=1,  # Ensures proper scaling
+        show_tips=False,  # Reduces clutter on mobile
     )
