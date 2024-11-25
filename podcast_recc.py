@@ -17,8 +17,9 @@ def get_podcast_recommendations():
               'nutrition', 'fitness', 'female health', 'self-improvement', 
               'female empowerment']
     
+    random_query = random.choice(queries)
     response = client.search(
-      q=random.choice(queries),
+      q=random_query,
       sort_by_date=0,
       type='episode',
       len_min=5,
@@ -43,6 +44,7 @@ def get_podcast_recommendations():
         
         podcast_info = result.get('podcast', {})
         recommendations.append({
+            'thumbnail': result.get('thumbnail', 'No Thumbnail'),
             'title': result.get('title_original', 'No Title'),
             'podcast_title': podcast_info.get('title_original', 'Unknown Podcast'),
             'publisher': podcast_info.get('publisher_original', 'Unknown Publisher'),
@@ -52,7 +54,7 @@ def get_podcast_recommendations():
             'link': result.get('link', 'No Link')
         })
     
-    return recommendations
+    return recommendations, random_query
 
 if __name__ == "__main__":
     recommendations = get_podcast_recommendations()
