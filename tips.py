@@ -19,7 +19,7 @@ def get_tip(topic):
         prompt,
         max_new_tokens=300,
         do_sample=True,
-        temperature=0.9,
+        temperature=0.6,
     )
 
 def get_nutrition_tip():
