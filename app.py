@@ -118,6 +118,4 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=7860,
         quiet=True,
-        scale=1,  # Ensures proper scaling
-        show_tips=False,  # Reduces clutter on mobile
     )
