@@ -19,7 +19,6 @@ css_code = """
     url('https://img.freepik.com/premium-photo/couple-love-beautiful-desktop-background_212944-31581.jpg?w=1380');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 """
 
