@@ -1,69 +1,69 @@
-from listennotes import podcast_api
+import requests
 from datetime import datetime
 import random
-import time
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+
+def format_duration(milliseconds):
+    """Convert milliseconds to HH:MM:SS format"""
+    seconds = milliseconds // 1000
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    seconds = seconds % 60
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+def format_podcast_recommendations(podcasts, topic):
+    formatted_text = f"Here are some recommended podcasts about **{topic}**:\n\n"
+    
+    for i, podcast in enumerate(podcasts, 1):
+        formatted_text += f"### {i}. {podcast['trackName']}\n"
+        formatted_text += f"<img src='{podcast['artworkUrl60']}' width='160' height='160'>\n\n"
+        formatted_text += f"🎙️ **Show**: {podcast['collectionName']}\n\n"
+        formatted_text += f"⏱️ **Duration**: {podcast['duration']}\n\n"
+        formatted_text += f"📝 **Description**: {podcast['description']}\n\n"
+        formatted_text += f"🔗 [Listen Now]({podcast['viewURL']})\n\n"
+        formatted_text += "---\n\n"
+    
+    return formatted_text
 
 def get_podcast_recommendations():
-    api_key = os.getenv('LISTENNOTES_API_KEY')
-    if not api_key:
-        raise ValueError("LISTENNOTES_API_KEY environment variable is not set")
-        
-    client = podcast_api.Client(api_key=api_key)
-    queries = ['parenting', 'relationships', 'mental health', 'longevity medicine', 
-              'nutrition', 'fitness', 'female health', 'self-improvement', 
-              'female empowerment']
+    queries = ['parenting', 'marriage', 'mental health', 'longevity medicine', 
+              'nutrition', 'health and wellness', 'self-improvement']
     
     random_query = random.choice(queries)
-    response = client.search(
-      q=random_query,
-      sort_by_date=0,
-      type='episode',
-      len_min=5,
-      len_max=200,
-      genre_ids='132, 88, 107',
-      published_before=int(time.time() * 1000),
-      language='English',
-      page_size=10,
-    )
     
-    results = response.json()['results']
-
-    # Select 3 random results
-    random_results = random.sample(results, min(3, len(results)))
-
+    # iTunes API request
+    url = f"https://itunes.apple.com/search"
+    params = {
+        'term': random_query,
+        'media': 'podcast',
+        'entity': 'podcastEpisode',
+        'attribute': 'keywordsTerm',
+        'limit': 30,
+        'lang': 'en_us'
+    }
+    
+    response = requests.get(url, params=params)
+    results = response.json().get('results', [])
+    
+    # Select 3 random results without filtering by rating
+    selected_results = random.sample(results, min(3, len(results)))
+    
     recommendations = []
-    for result in random_results:
-        audio_length = result.get('audio_length_sec', 0)
-        hours = audio_length // 3600
-        minutes = (audio_length % 3600) // 60
-        seconds = audio_length % 60
+    for result in selected_results:
+        artwork_url = result.get('artworkUrl60', '').replace('60x60', '160x160')
         
-        podcast_info = result.get('podcast', {})
         recommendations.append({
-            'thumbnail': result.get('thumbnail', 'No Thumbnail'),
-            'title': result.get('title_original', 'No Title'),
-            'podcast_title': podcast_info.get('title_original', 'Unknown Podcast'),
-            'publisher': podcast_info.get('publisher_original', 'Unknown Publisher'),
-            'pub_date': datetime.fromtimestamp(result.get('pub_date_ms', 0)/1000).strftime('%B %d, %Y'),
-            'duration': f"{hours:02d}:{minutes:02d}:{seconds:02d}",
-            'description': result.get('description_original', 'No Description')[:500] + "...",
-            'link': result.get('link', 'No Link')
+            'kind': result.get('kind', 'Unknown'),
+            'trackName': result.get('trackName', 'No Title'),
+            'collectionName': result.get('collectionName', 'Unknown Collection'),
+            'artworkUrl60': artwork_url,
+            'viewURL': result.get('trackViewUrl', 'No Link'),
+            'duration': format_duration(result.get('trackTimeMillis', 0)),
+            'description': result.get('description', 'No description available')
         })
     
-    return recommendations, random_query
+    return format_podcast_recommendations(recommendations, random_query)
 
 if __name__ == "__main__":
     recommendations = get_podcast_recommendations()
-    for rec in recommendations:
-        print(f"iTunes ID: {rec['itunes_id']}")
-        print(f"Title: {rec['title']}")
-        print(f"Podcast: {rec['podcast_title']} by {rec['publisher']}")
-        print(f"Published: {rec['pub_date']}")
-        print(f"Duration: {rec['duration']}")
-        print(f"Description: {rec['description']}")
-        print(f"Link: {rec['link']}")
-        print("-" * 40)
+    print(recommendations)
