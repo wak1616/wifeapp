@@ -32,7 +32,8 @@ with gr.Blocks(theme=gr.themes.Glass(), css=css_code) as demo:
     gr.Markdown(f"## 🥗 Nutrition Tip\n\n{get_nutrition_tip()}\n\n---\n")
     
     # Create podcast section with refresh button
-    podcast_output = gr.Markdown(f"## 🎧 Podcast Recommendations\n\n{get_podcast_recommendations()}\n\n---\n")
+    gr.Markdown(f"## 🎧 Podcast Recommendations:\n\n")
+    podcast_output = gr.Markdown(f"{get_podcast_recommendations()}\n\n---\n")
     gr.Button("🔄 Get New Podcast Recommendations").click(
         fn=refresh_podcasts,
         outputs=podcast_output
