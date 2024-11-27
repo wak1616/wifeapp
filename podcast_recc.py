@@ -37,7 +37,7 @@ def get_podcast_recommendations():
         'term': random_query,
         'media': 'podcast',
         'entity': 'podcastEpisode',
-        'attribute': 'keywordsTerm',
+        'attribute': 'ratingIndex',
         'limit': 30,
         'lang': 'en_us'
     }
