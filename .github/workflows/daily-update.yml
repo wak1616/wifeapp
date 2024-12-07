@@ -25,7 +25,7 @@ jobs:
 
       - name: Trigger app update
         env:
-          HUGGING_FACE_TOKEN: ${{ secrets.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 }}
+          HUGGING_FACE_TOKEN: ${{ secrets.HUGGING_FACE_TOKEN }}
         run: |
           python app.py &  # Start the app
           sleep 10  # Wait for app to initialize
