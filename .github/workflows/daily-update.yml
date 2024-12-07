@@ -60,3 +60,19 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update content $(date)" && git push)
+
+      - name: Update Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HUGGING_FACE_TOKEN }}
+        run: |
+          # Create or update the space
+          python -c "
+          from huggingface_hub import HfApi
+          api = HfApi()
+          api.upload_folder(
+              folder_path='.',
+              repo_id='wak1616/wifeapp',
+              repo_type='space',
+              token='$HF_TOKEN'
+          )
+          "
