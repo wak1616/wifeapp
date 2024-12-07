@@ -27,10 +27,28 @@ jobs:
         env:
           HUGGING_FACE_TOKEN: ${{ secrets.HUGGING_FACE_TOKEN }}
         run: |
-          python app.py &  # Start the app
-          sleep 10  # Wait for app to initialize
-          curl http://localhost:7860  # Trigger content refresh
-          pkill -f "python app.py"  # Stop the app
+          # Start the app with logging
+          python app.py > app.log 2>&1 &
+          
+          # Store the PID
+          APP_PID=$!
+          
+          # Wait longer for the app to start
+          echo "Waiting for app to start..."
+          sleep 30
+          
+          # Check if the process is still running
+          if ps -p $APP_PID > /dev/null; then
+            echo "App is running, attempting to connect..."
+            curl -v http://localhost:7860
+          else
+            echo "App failed to start. Here's the log:"
+            cat app.log
+            exit 1
+          fi
+          
+          # Kill the app
+          kill $APP_PID || true
 
       - name: Commit and push if there are changes
         run: |
